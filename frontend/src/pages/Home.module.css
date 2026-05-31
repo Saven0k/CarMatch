@@ -1,0 +1,402 @@
+.home {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero секция */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  background: linear-gradient(120deg, #ffd89b 0%, #c7e9fb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.primaryButton {
+  background: white;
+  color: #667eea;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.secondaryButton:hover {
+  background: white;
+  color: #667eea;
+}
+
+.ctaButton {
+  background: white;
+  color: #667eea;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.heroImage {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.floatingCar {
+  font-size: 8rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(-50%); }
+  50% { transform: translateY(-60%); }
+}
+
+/* Как это работает */
+.howItWorks {
+  padding: 5rem 8rem;
+  background: #f8f9fa;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.stepIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.step h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #667eea;
+}
+
+.step p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Почему мы */
+.whyUs {
+  padding: 5rem 8rem;
+  background: white;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Пример подбора */
+.example {
+  padding: 5rem 8rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.example .sectionTitle {
+  color: white;
+}
+
+.exampleCard {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exampleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userAvatar {
+  font-size: 3rem;
+}
+
+.userProfile h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.userProfile p {
+  opacity: 0.9;
+}
+
+.exampleResult {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.arrow {
+  font-size: 2rem;
+}
+
+.carMatch strong {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.matchBadge {
+  display: inline-block;
+  background: #4caf50;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.matchReason {
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Отзывы */
+.reviews {
+  padding: 5rem 8rem;
+  background: #f8f9fa;
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.reviewCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+}
+
+.reviewText {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.reviewAuthor {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.reviewAuthor strong {
+  display: block;
+  color: #667eea;
+  margin-bottom: 0.25rem;
+}
+
+.reviewAuthor span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* CTA секция */
+.cta {
+  padding: 5rem 8rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.ctaContent h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.ctaButtonLarge {
+  background: white;
+  color: #667eea;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.ctaButtonLarge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .heroContent {
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    justify-content: center;
+  }
+  
+  .howItWorks,
+  .whyUs,
+  .example,
+  .reviews,
+  .cta {
+    padding: 3rem 2rem;
+  }
+  
+  .steps {
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+}
